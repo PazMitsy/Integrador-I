@@ -1,0 +1,365 @@
+/* Configuración global */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #444;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.acciones1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acciones1 button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Barra de navegación */
+.barra-menu {
+    display: flex;
+    background-color: #ccc;
+    padding: 10px 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.barra-menu button {
+    padding: 8px 12px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.barra-menu .activo {
+    background: #007bff;
+    color: white;
+}
+
+/* Botones */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn.blue {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn.gray {
+    background-color: #eee;
+    color: #333;
+}
+
+.btn-primary {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contenido principal */
+.main-content, .dashboard, .seccion-movimientos {
+    padding: 20px;
+}
+
+/* Sección de cursos */
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filtros {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.filtros button {
+    margin: 0 8px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenedor-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.curso {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.curso iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 5px;
+}
+
+.curso h3 {
+    margin: 10px 0;
+}
+
+.curso .completar {
+    margin-top: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Tabla de movimientos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Paginación */
+.paginacion {
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.paginacion button {
+    padding: 6px 10px;
+    border: none;
+    background: #ddd;
+    border-radius: 4px;
+}
+
+.paginacion .activo {
+    background: #007bff;
+    color: white;
+}
+
+/* Modales */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.modal-contenido h3 {
+    margin-top: 0;
+}
+
+.modal-contenido form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-contenido input, select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.acciones-modal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Sección de estadísticas */
+.stats-grid, .charts-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 30px;
+}
+
+.chart-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card.big {
+    font-size: 1.2em;
+    padding: 25px;
+}
+
+/* Tablas */
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Billetera digital */
+.wallet-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.wallet-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.btn-action {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Sección QR */
+.qr-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.qr-section img {
+    width: 150px;
+    height: auto;
+}
+
+/* Alertas */
+.alerta {
+    background-color: #ffdddd;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+/* Historial de transacciones */
+.acciones {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.acciones ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos para modales */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 100, 100, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 600px;
+    border-radius: 8px;
+}
+
+.modal-content input, .modal-content select, .modal-content textarea {
+    width: 100%;
+    margin: 5px 0 15px 0;
+    padding: 8px;
+}
+
+.modal-buttons {
+    text-align: right;
+}
